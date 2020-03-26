@@ -1,5 +1,5 @@
 var search = document.getElementById("frc:search");
-var print = "<span id=\"printBtn__\" style=\"float: right;\" class=\"btn btn-primary btn-sm\">Stampa</span>";
+var print = "<span id=\"printBtn__\" style=\"margin-left:30px;\" class=\"btn btn-primary btn-sm\">Stampa</span>";
 
 search.insertAdjacentHTML('afterEnd',print);
 
