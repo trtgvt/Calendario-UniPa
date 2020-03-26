@@ -8,7 +8,7 @@
     ],
     "content_scripts": [
         {
-            "matches": ["https://offweb.unipa.it/offweb/public/aula/weekCalendar.seam"],
+            "matches": ["*://offweb.unipa.it/offweb/public/aula/weekCalendar.seam*"],
             "js": ["content.js"],
             "css": ["style.css"],
             "run_at": "document_end"
