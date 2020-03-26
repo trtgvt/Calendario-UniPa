@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Calendario UniPa",
+    "version": "1.0.0",
+    "description": "Esporta il calendario delle lezioni UniPa",
+    "permissions": [
+        "declarativeContent"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://offweb.unipa.it/offweb/public/aula/weekCalendar.seam"],
+            "js": ["content.js"],
+            "css": ["style.css"],
+            "run_at": "document_end"
+        }
+    ],
+    "background": {
+        "persistent": false,
+        "scripts": ["background.js"]
+    },
+    "page_action": {
+        "16": "images/icon16.png",
+        "24": "images/icon24.png",
+        "default_icon": {
+            "32": "images/icon32.png"
+        }
+    }
+}
